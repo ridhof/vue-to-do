@@ -14,9 +14,9 @@
                 </span>
               </div>
               <input
-                v-model="user.email"
-                type="email"
-                placeholder="Email"
+                v-model="user.username"
+                type="text"
+                placeholder="Username"
                 class="form-control"
               >
             </div>
@@ -86,7 +86,7 @@ export default {
   data() {
     return {
       user: {
-        email: null,
+        username: null,
         password: null,
       },
     };

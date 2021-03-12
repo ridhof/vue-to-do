@@ -28,7 +28,7 @@ class AuthProxy extends Proxy {
       scope: '',
     };
 
-    return this.submit('post', `${this.endpoint}/token`, data);
+    return this.submit('post', `${this.endpoint}/login`, data);
   }
 
   /**

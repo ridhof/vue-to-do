@@ -8,7 +8,7 @@ class BaseProxy {
    * @param {Object} parameters The parameters for the request.
    */
   constructor(endpoint, parameters = {}) {
-    this.endpoint = endpoint;
+    this.endpoint = 'http://18.139.50.74:8080';
     this.parameters = parameters;
   }
 
