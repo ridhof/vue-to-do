@@ -14,24 +14,9 @@
                 </span>
               </div>
               <input
-                v-model="user.firstName"
+                v-model="user.username"
                 type="text"
-                placeholder="First name"
-                class="form-control"
-              >
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fa fa-user fa-fw" />
-                </span>
-              </div>
-              <input
-                v-model="user.lastName"
-                type="text"
-                placeholder="Last name"
+                placeholder="Username"
                 class="form-control"
               >
             </div>
@@ -62,21 +47,6 @@
                 v-model="user.password"
                 type="password"
                 placeholder="Password"
-                class="form-control"
-              >
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fa fa-lock fa-fw" />
-                </span>
-              </div>
-              <input
-                v-model="user.passwordConfirm"
-                type="password"
-                placeholder="Confirm password"
                 class="form-control"
               >
             </div>
@@ -131,10 +101,8 @@ export default {
   data() {
     return {
       user: {
-        firstName: null,
-        lastName: null,
+        username: null,
         email: null,
-        passwordConfirm: null,
         password: null,
       },
     };

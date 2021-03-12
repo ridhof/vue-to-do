@@ -34,11 +34,21 @@ class AuthProxy extends Proxy {
   /**
    * Method used to register the user.
    *
-   * @param {Object} data The register data.
+   * @param {String} username The username.
+   * @param {String} email The email.
+   * @param {String} password The password.
    *
    * @returns {Promise} The result in a promise.
    */
-  register(data) {
+  register({ username, email, password }) {
+    const data = {
+      username,
+      email,
+      password,
+      grant_type: 'password',
+      scope: '',
+    };
+    console.log(data);
     return this.submit('post', `${this.endpoint}/register`, data);
   }
 }
